@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class RandomPicker : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -11,10 +12,13 @@ public class RandomPicker : MonoBehaviour
     public Text penaltyDescription1;
     public Text penaltyDescription2;
     public Text penaltyDescription3;
+    public Text finalPenalty;
     public void GatchaWho()
     {
+        finalPenalty.text = "";
         int rand = Random.Range(0, GatchaList1.Count);
         penaltyDescription1.text = GatchaList1[rand];
+        finalPenalty.text+= penaltyDescription1.text;
         GatchaList1.RemoveAt(rand);
     }
 
@@ -22,6 +26,7 @@ public class RandomPicker : MonoBehaviour
     {
         int rand = Random.Range(0, GatchaList2.Count);
         penaltyDescription2.text = GatchaList2[rand];
+        finalPenalty.text += penaltyDescription2.text;
         GatchaList2.RemoveAt(rand);
     }
 
@@ -29,7 +34,13 @@ public class RandomPicker : MonoBehaviour
     {
         int rand = Random.Range(0, GatchaList3.Count);
         penaltyDescription3.text = GatchaList3[rand];
+        finalPenalty.text += penaltyDescription3.text;
         GatchaList3.RemoveAt(rand);
+    }
+
+    public void MoveGame1()
+    {
+        SceneLoader.Instance.LoadScene("WalkerStatic1");
     }
 
 
