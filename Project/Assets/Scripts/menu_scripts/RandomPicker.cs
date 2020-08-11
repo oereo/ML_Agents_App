@@ -40,7 +40,7 @@ public class RandomPicker : MonoBehaviour
 
     public void MoveGame1()
     {
-        SceneLoader.Instance.LoadScene("WalkerStatic1");
+        SceneLoader.Instance.LoadScene("WalkerStatic");
     }
 
 
