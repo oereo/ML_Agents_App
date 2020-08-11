@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cube : MonoBehaviour
+public class Fall_Stone : MonoBehaviour
 {
     // Start is called before the first frame update
 
     public GameObject stone;
-    private float startTime = 2;
+    private float startTime = 1;
     private float repeatTime = 0.15f;
 
     private void Start()
@@ -22,7 +22,7 @@ public class cube : MonoBehaviour
 
     private void Spawn()
     {
-        float xPos = Random.Range(-450, -550);
+        float xPos = Random.Range(-440, -520);
         float zPos = Random.Range(-290, -330);
         Vector3 stonePos = new Vector3(xPos, 30, zPos);
         Instantiate(stone, stonePos, stone.transform.rotation);
