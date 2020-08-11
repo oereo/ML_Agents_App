@@ -7,7 +7,7 @@ public class Fall_Stone : MonoBehaviour
     // Start is called before the first frame update
 
     public GameObject stone;
-    private float startTime = 1;
+    private float startTime = 0;
     private float repeatTime = 0.15f;
 
     private void Start()
@@ -22,9 +22,9 @@ public class Fall_Stone : MonoBehaviour
 
     private void Spawn()
     {
-        float xPos = Random.Range(-440, -520);
+        float xPos = Random.Range(-480, -510);
         float zPos = Random.Range(-290, -330);
-        Vector3 stonePos = new Vector3(xPos, 30, zPos);
+        Vector3 stonePos = new Vector3(xPos, 15, zPos);
         Instantiate(stone, stonePos, stone.transform.rotation);
     }   
     //Vector3[] positions = new Vector3[5];
