@@ -30,6 +30,7 @@ TagManager:
   - purpleAgent
   - purpleGoal
   - Red
+  - card
   layers:
   - Default
   - TransparentFX
