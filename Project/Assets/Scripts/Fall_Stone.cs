@@ -22,8 +22,8 @@ public class Fall_Stone : MonoBehaviour
 
     private void Spawn()
     {
-        float xPos = Random.Range(-440, -520);
-        float zPos = Random.Range(-290, -330);
+        float xPos = Random.Range(-470, -500);
+        float zPos = Random.Range(-220, -270);
         Vector3 stonePos = new Vector3(xPos, 30, zPos);
         Instantiate(stone, stonePos, stone.transform.rotation);
     }   
