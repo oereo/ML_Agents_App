@@ -25,8 +25,12 @@ namespace Unity.MLAgentsExamples
         public float fallDistance = 5; //distance below the starting height that will trigger a respawn 
 
 
+
+        public Text Winner;
+        public Text B;
+        public Text R;
+        public GameObject agent;
         public GameObject finishUI;
-        public Text winner;
 
         bool finish = false;
         private Vector3 m_startingPos; //the starting position of the target
@@ -93,8 +97,17 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodBlueteam");
                     finishUI.SetActive(true);
-                  
-                    winner.text = "Blue team";
+                    agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 3;
+                    B.text = agent.GetComponent<GameAgent>().Blue.ToString();
+                    R.text = agent.GetComponent<GameAgent>().Red.ToString();
+                    if (agent.GetComponent<GameAgent>().Blue> agent.GetComponent<GameAgent>().Red)
+                    {
+                        Winner.text = "Blue";
+                    }
+                    else
+                    {
+                        Winner.text = "Red";
+                    }
                     onCollisionEnterEvent.Invoke(col);
                     if (respawnIfTouched)
                     {
@@ -109,7 +122,17 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodRedteam");
                     finishUI.SetActive(true);
-                    winner.text = "Red team";
+                    agent.GetComponent<GameAgent>().Red = agent.GetComponent<GameAgent>().Red + 3;
+                    B.text = agent.GetComponent<GameAgent>().Blue.ToString();
+                    R.text = agent.GetComponent<GameAgent>().Red.ToString();
+                    if (agent.GetComponent<GameAgent>().Blue > agent.GetComponent<GameAgent>().Red)
+                    {
+                        Winner.text = "Blue";
+                    }
+                    else
+                    {
+                        Winner.text = "Red";
+                    }
                     onCollisionEnterEvent.Invoke(col);
                     if (respawnIfTouched)
                     {

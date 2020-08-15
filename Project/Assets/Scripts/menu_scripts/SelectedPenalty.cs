@@ -4,11 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 public class SelectedPenalty : MonoBehaviour
 {
-    public Text penalty;
-    void Awake()
+    private void Awake()
+
     {
-        DontDestroyOnLoad(gameObject);
+
+        var obj = FindObjectsOfType<SelectedPenalty>();
+
+        if (obj.Length == 1)
+
+        {
+
+            DontDestroyOnLoad(gameObject);
+
+        }
+
+        else
+
+        {
+
+            Destroy(gameObject);
+
+        }
+
     }
 
-    
 }
