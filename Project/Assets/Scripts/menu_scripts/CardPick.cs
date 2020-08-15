@@ -36,7 +36,7 @@ public class CardPick : MonoBehaviour
     {
 
         whichPick.text = num.ToString();
-
+  
     }
 
 
