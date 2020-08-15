@@ -52,17 +52,24 @@ public class AgentSoccer : Agent
 
     public override void Initialize()
     {
+        float xPos = UnityEngine.Random.Range(-3, 3);
+        float zPos = UnityEngine.Random.Range(-3, 3);
+
         m_Existential = 1f / MaxStep;
         m_BehaviorParameters = gameObject.GetComponent<BehaviorParameters>();
         if (m_BehaviorParameters.TeamId == (int)Team.Blue)
         {
             team = Team.Blue;
-            m_Transform = new Vector3(transform.position.x - 4f, .5f, transform.position.z);
+            m_Transform = new Vector3(transform.position.x - xPos, .5f, transform.position.z - zPos);
+
+            //m_Transform = new Vector3(transform.position.x - 4f, .5f, transform.position.z);
         }
         else
         {
             team = Team.Purple;
-            m_Transform = new Vector3(transform.position.x + 4f, .5f, transform.position.z);
+            m_Transform = new Vector3(transform.position.x - xPos, .5f, transform.position.z - zPos);
+
+            //_Transform = new Vector3(transform.position.x + 4f, .5f, transform.position.z);
         }
         if (position == Position.Goalie)
         {
