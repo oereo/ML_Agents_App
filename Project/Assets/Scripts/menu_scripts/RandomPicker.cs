@@ -10,7 +10,8 @@ public class RandomPicker : MonoBehaviour
     public List<int> RedCard = new List<int>();
     public int BlueScore;
     public int RedScore;
-
+    
+    //manager = GameObject.FindGameObjectWithTag("GM");
 
     public void BluePick(int num)
     {
@@ -26,6 +27,9 @@ public class RandomPicker : MonoBehaviour
         RedCard.RemoveAt(index);
     }
 
-
+    public void MoveGame2()
+    {
+        SceneLoader.Instance.LoadScene("SoccerTwos");
+    }
 
 }

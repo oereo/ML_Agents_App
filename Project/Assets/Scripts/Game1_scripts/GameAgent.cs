@@ -10,14 +10,18 @@ public class GameAgent : MonoBehaviour
     public Text p;
     public int Blue;
     public int Red;
+    public bool Soccer;
+
     void Awake()
     {
-        int rand = Random.Range(0, gameOptions.Count);
-        temp = GameObject.FindGameObjectWithTag("GM");
-        gameOptions[rand].SetActive(true);  
-        Blue = temp.GetComponent<RandomPicker>().BlueScore;
-        Red = temp.GetComponent<RandomPicker>().RedScore;
-     
+        if (!Soccer)
+        {
+            int rand = Random.Range(0, gameOptions.Count);
+            temp = GameObject.FindGameObjectWithTag("GM");
+            gameOptions[rand].SetActive(true);
+            Blue = temp.GetComponent<RandomPicker>().BlueScore;
+            Red = temp.GetComponent<RandomPicker>().RedScore;
+        }
       //  Destroy(GameObject.FindGameObjectWithTag("GM"));
     }
 

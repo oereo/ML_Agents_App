@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scene/WalkerStatic.unity
     guid: 36160dc1faf384eaa9a65a73f6942ce3
+  - enabled: 1
+    path: Assets/Scene/SoccerTwos.unity
+    guid: f8055e5dfa04643559678426a82225c1
   m_configObjects: {}

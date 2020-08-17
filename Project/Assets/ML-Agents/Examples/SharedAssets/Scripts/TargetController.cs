@@ -97,7 +97,7 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodBlueteam");
                     finishUI.SetActive(true);
-                    agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 3;
+                    agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 1;
                     B.text = agent.GetComponent<GameAgent>().Blue.ToString();
                     R.text = agent.GetComponent<GameAgent>().Red.ToString();
                     if (agent.GetComponent<GameAgent>().Blue> agent.GetComponent<GameAgent>().Red)
@@ -122,7 +122,7 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodRedteam");
                     finishUI.SetActive(true);
-                    agent.GetComponent<GameAgent>().Red = agent.GetComponent<GameAgent>().Red + 3;
+                    agent.GetComponent<GameAgent>().Red = agent.GetComponent<GameAgent>().Red + 1;
                     B.text = agent.GetComponent<GameAgent>().Blue.ToString();
                     R.text = agent.GetComponent<GameAgent>().Red.ToString();
                     if (agent.GetComponent<GameAgent>().Blue > agent.GetComponent<GameAgent>().Red)
