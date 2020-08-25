@@ -19,16 +19,16 @@ public class SoccerFieldArea : MonoBehaviour
 {
     public GameObject ball;
     [FormerlySerializedAs("ballRB")]
-    [HideInInspector]
+//[HideInInspector]
     public Rigidbody ballRb;
     public GameObject ground;
     public GameObject centerPitch;
     SoccerBallController m_BallController;
     public List<PlayerState> playerStates = new List<PlayerState>();
-    [HideInInspector]
+   // [HideInInspector]
     public Vector3 ballStartingPos;
     public GameObject goalTextUI;
-    [HideInInspector]
+   // [HideInInspector]
     public bool canResetBall;
 
     EnvironmentParameters m_ResetParams;
@@ -75,7 +75,7 @@ public class SoccerFieldArea : MonoBehaviour
 
     public void ResetBall()
     {
-        ball.transform.position = ballStartingPos;
+        ball.transform.position = new Vector3(0f,0.5f,0f);
         ballRb.velocity = Vector3.zero;
         ballRb.angularVelocity = Vector3.zero;
 
