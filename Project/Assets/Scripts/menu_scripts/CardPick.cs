@@ -8,7 +8,7 @@ public class CardPick : MonoBehaviour
     public int team;
     public int num;
     GameObject manager;
-    public Text whichPick;
+   
   //  public GameObject pickBut;
 
     public void Start()
@@ -31,14 +31,14 @@ public class CardPick : MonoBehaviour
 
         }
     }
-
-    public void showPick()
+    
+    public void hideB()
     {
+        GameObject[] obj3 = GameObject.FindGameObjectsWithTag("GS");
+        for (int i = 0; i < obj3.Length; i++)
+        { obj3[i].SetActive(false); }
 
-        whichPick.text = num.ToString();
-  
     }
-
 
     public void Blue()
     {

@@ -32,6 +32,7 @@ TagManager:
   - Red
   - card
   - GM
+  - GS
   layers:
   - Default
   - TransparentFX
