@@ -33,6 +33,7 @@ TagManager:
   - card
   - GM
   - GS
+  - jebi
   layers:
   - Default
   - TransparentFX

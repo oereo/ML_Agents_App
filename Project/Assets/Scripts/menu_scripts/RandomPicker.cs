@@ -13,6 +13,19 @@ public class RandomPicker : MonoBehaviour
     
     //manager = GameObject.FindGameObjectWithTag("GM");
 
+    public void Reset()
+    {
+
+       BlueCard.Clear();
+       RedCard.Clear();
+        for (int i = 1; i <= 7; i++)
+        {
+            BlueCard.Add(i);
+            RedCard.Add(i);
+        }
+    }
+
+
     public void BluePick(int num)
     {
         BlueScore = num;

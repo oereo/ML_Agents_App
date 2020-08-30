@@ -36,5 +36,15 @@ public class GameAgent : MonoBehaviour
     {
         SceneLoader.Instance.LoadScene("menu");
     }
+    public void Restart()
+    {
+        SceneLoader.Instance.LoadScene("WalkerStatic");
+    }
+
+    public void Restart_Soc()
+    {
+        SceneLoader.Instance.LoadScene("SoccerTwos");
+    }
+
 
 }
