@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class EyeRotate : MonoBehaviour
 {
     // Start is called before the first frame update
-    float turnspeed = 40f;
+    public float turnspeed = 160f;
     void Start()
     {
         
