@@ -100,13 +100,20 @@ namespace Unity.MLAgentsExamples
                     agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 1;
                     B.text = agent.GetComponent<GameAgent>().Blue.ToString();
                     R.text = agent.GetComponent<GameAgent>().Red.ToString();
+                    GameObject temp = GameObject.FindGameObjectWithTag("GM");
                     if (agent.GetComponent<GameAgent>().Blue> agent.GetComponent<GameAgent>().Red)
                     {
+                        temp.GetComponent<RandomPicker>().B_textSc++;
                         Winner.text = "Blue";
                     }
-                    else
+                    else if(agent.GetComponent<GameAgent>().Blue < agent.GetComponent<GameAgent>().Red)
                     {
+                        temp.GetComponent<RandomPicker>().R_textSc++;
                         Winner.text = "Red";
+                    }
+                    else 
+                    {
+                        Winner.text = "Nobody";
                     }
                     onCollisionEnterEvent.Invoke(col);
                     if (respawnIfTouched)
@@ -125,13 +132,20 @@ namespace Unity.MLAgentsExamples
                     agent.GetComponent<GameAgent>().Red = agent.GetComponent<GameAgent>().Red + 1;
                     B.text = agent.GetComponent<GameAgent>().Blue.ToString();
                     R.text = agent.GetComponent<GameAgent>().Red.ToString();
+                    GameObject temp = GameObject.FindGameObjectWithTag("GM");
                     if (agent.GetComponent<GameAgent>().Blue > agent.GetComponent<GameAgent>().Red)
                     {
+                        temp.GetComponent<RandomPicker>().B_textSc++;
                         Winner.text = "Blue";
+                    }
+                    else if (agent.GetComponent<GameAgent>().Blue < agent.GetComponent<GameAgent>().Red)
+                    {
+                        temp.GetComponent<RandomPicker>().R_textSc++;
+                        Winner.text = "Red";
                     }
                     else
                     {
-                        Winner.text = "Red";
+                        Winner.text = "Nobody";
                     }
                     onCollisionEnterEvent.Invoke(col);
                     if (respawnIfTouched)

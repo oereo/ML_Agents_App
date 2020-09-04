@@ -21,9 +21,11 @@ public class CardFlip : MonoBehaviour
           
             if (rtt >= 600)
             {
+                transform.rotation = Quaternion.Euler(new Vector3(0, 0, 0));
                 flip.SetActive(true);
                 rot = false;
                 gameObject.SetActive(false);
+                rtt = 0;
             }
             else
             {

@@ -10,13 +10,26 @@ public class RandomPicker : MonoBehaviour
     public List<int> RedCard = new List<int>();
     public int BlueScore;
     public int RedScore;
+    public int B_textSc=0;
+    public int R_textSc=0;
     
     //manager = GameObject.FindGameObjectWithTag("GM");
 
+
+ 
+
     public void Reset()
     {
-
-       BlueCard.Clear();
+        B_textSc = 0; 
+        R_textSc = 0;
+        GameObject[] tempB = GameObject.FindGameObjectsWithTag("bs");
+        GameObject[] tempR = GameObject.FindGameObjectsWithTag("rs");
+        for (int i = 0; i < tempB.Length; i++)
+        {
+            tempB[i].GetComponent<Text>().text = B_textSc.ToString();
+            tempR[i].GetComponent<Text>().text = R_textSc.ToString();
+        }
+        BlueCard.Clear();
        RedCard.Clear();
         for (int i = 1; i <= 7; i++)
         {
@@ -24,7 +37,6 @@ public class RandomPicker : MonoBehaviour
             RedCard.Add(i);
         }
     }
-
 
     public void BluePick(int num)
     {

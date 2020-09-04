@@ -15,6 +15,7 @@ public class SoccerBallController : MonoBehaviour
         {
             if (col.gameObject.CompareTag(purpleGoalTag)) //ball touched purple goal
             {
+                check = true;
                 finishUI.SetActive(true);
                 area.GoalTouched(AgentSoccer.Team.Blue);
                 winner.text = "Red";
@@ -22,6 +23,7 @@ public class SoccerBallController : MonoBehaviour
             }
             if (col.gameObject.CompareTag(blueGoalTag)) //ball touched blue goal
             {
+                check = true;
                 finishUI.SetActive(true);
                 area.GoalTouched(AgentSoccer.Team.Purple);
                 winner.text = "Blue";

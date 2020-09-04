@@ -19,7 +19,7 @@ public class PositionLerpAnimation : MonoBehaviour {
     private void OnEnable()
     {
        
-        print("OnEnable");
+        
         rectTransform = GetComponent<RectTransform>();
 
 
