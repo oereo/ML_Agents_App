@@ -8,10 +8,7 @@ public class CardFlip : MonoBehaviour
     public GameObject flip;
     bool rot = false;
     float rtt = 0f;
-    void Start()
-    {
-        
-    }
+  
 
     // Update is called once per frame
     void Update()

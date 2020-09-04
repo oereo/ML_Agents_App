@@ -19,14 +19,17 @@ public class RandomPicker : MonoBehaviour
     public void Update()
     {
         GameObject temp = GameObject.FindGameObjectWithTag("con");
-        if (temp) { Debug.Log("..."); }
-        if (isGM)
+        if (temp)
         {
-            if (!isPlayingCard&&temp)
+            
+            if (isGM)
             {
-                temp.SetActive(false);
-            }
+                if (!isPlayingCard && temp)
+                {
+                    temp.SetActive(false);
+                }
 
+            }
         }
     }
 
