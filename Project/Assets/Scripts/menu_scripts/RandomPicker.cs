@@ -12,10 +12,30 @@ public class RandomPicker : MonoBehaviour
     public int RedScore;
     public int B_textSc=0;
     public int R_textSc=0;
-    
+    public bool isPlayingCard = false;
+    public bool isGM = true;
+   
     //manager = GameObject.FindGameObjectWithTag("GM");
+    public void Update()
+    {
+        GameObject temp = GameObject.FindGameObjectWithTag("con");
+        if (temp) { Debug.Log("..."); }
+        if (isGM)
+        {
+            if (!isPlayingCard&&temp)
+            {
+                temp.SetActive(false);
+            }
 
+        }
+    }
 
+    public void cardOff()
+    {
+        GameObject temp = GameObject.FindGameObjectWithTag("GM");
+        temp.GetComponent<RandomPicker>().isPlayingCard = false;
+
+    }
  
 
     public void Reset()

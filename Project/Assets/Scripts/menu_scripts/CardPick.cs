@@ -8,7 +8,7 @@ public class CardPick : MonoBehaviour
     public int team;
     public int num;
     GameObject manager;
-   
+    
   //  public GameObject pickBut;
 
     public void Start()
@@ -30,6 +30,8 @@ public class CardPick : MonoBehaviour
             }
 
         }
+
+
     }
     
     public void hideB()

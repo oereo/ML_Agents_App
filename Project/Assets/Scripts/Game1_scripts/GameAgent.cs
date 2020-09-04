@@ -18,6 +18,7 @@ public class GameAgent : MonoBehaviour
         {
             int rand = Random.Range(0, gameOptions.Count);
             temp = GameObject.FindGameObjectWithTag("GM");
+            temp.GetComponent<RandomPicker>().isPlayingCard = true;
             gameOptions[rand].SetActive(true);
             Blue = temp.GetComponent<RandomPicker>().BlueScore;
             Red = temp.GetComponent<RandomPicker>().RedScore;

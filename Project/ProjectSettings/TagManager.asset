@@ -36,6 +36,7 @@ TagManager:
   - jebi
   - bs
   - rs
+  - con
   layers:
   - Default
   - TransparentFX

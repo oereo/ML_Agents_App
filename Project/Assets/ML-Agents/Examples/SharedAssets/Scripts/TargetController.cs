@@ -31,7 +31,7 @@ namespace Unity.MLAgentsExamples
         public Text R;
         public GameObject agent;
         public GameObject finishUI;
-
+        public GameObject reset;
         bool finish = false;
         private Vector3 m_startingPos; //the starting position of the target
         private Agent m_agentTouching; //the agent currently touching the target
@@ -97,6 +97,7 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodBlueteam");
                     finishUI.SetActive(true);
+                    reset.SetActive(false);
                     agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 1;
                     B.text = agent.GetComponent<GameAgent>().Blue.ToString();
                     R.text = agent.GetComponent<GameAgent>().Red.ToString();

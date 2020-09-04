@@ -5,15 +5,17 @@ using UnityEngine.UI;
 public class EyeRotate : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float turnspeed = 160f;
-    void Start()
+    public void cardOn()
     {
-        
+        GameObject temp = GameObject.FindGameObjectWithTag("GM");
+        temp.GetComponent<RandomPicker>().isPlayingCard = true;
+
     }
 
-    // Update is called once per frame
-    void Update()
+    public void cardOff()
     {
-        transform.Rotate(0f, 0f,turnspeed * Time.deltaTime);
+        GameObject temp = GameObject.FindGameObjectWithTag("GM");
+        temp.GetComponent<RandomPicker>().isPlayingCard = false;
+
     }
 }
