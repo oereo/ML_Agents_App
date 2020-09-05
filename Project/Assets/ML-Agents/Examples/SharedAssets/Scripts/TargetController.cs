@@ -98,19 +98,19 @@ namespace Unity.MLAgentsExamples
                     //Debug.Log("goodBlueteam");
                     finishUI.SetActive(true);
                     reset.SetActive(false);
-                    agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 1;
+                    agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 2;
                     B.text = agent.GetComponent<GameAgent>().Blue.ToString();
                     R.text = agent.GetComponent<GameAgent>().Red.ToString();
                     GameObject temp = GameObject.FindGameObjectWithTag("GM");
                     if (agent.GetComponent<GameAgent>().Blue> agent.GetComponent<GameAgent>().Red)
                     {
                         temp.GetComponent<RandomPicker>().B_textSc++;
-                        Winner.text = "Blue";
+                        Winner.text = "Blue ";
                     }
                     else if(agent.GetComponent<GameAgent>().Blue < agent.GetComponent<GameAgent>().Red)
                     {
                         temp.GetComponent<RandomPicker>().R_textSc++;
-                        Winner.text = "Red";
+                        Winner.text = "Red ";
                     }
                     else 
                     {
@@ -130,19 +130,19 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodRedteam");
                     finishUI.SetActive(true);
-                    agent.GetComponent<GameAgent>().Red = agent.GetComponent<GameAgent>().Red + 1;
+                    agent.GetComponent<GameAgent>().Red = agent.GetComponent<GameAgent>().Red + 2;
                     B.text = agent.GetComponent<GameAgent>().Blue.ToString();
                     R.text = agent.GetComponent<GameAgent>().Red.ToString();
                     GameObject temp = GameObject.FindGameObjectWithTag("GM");
                     if (agent.GetComponent<GameAgent>().Blue > agent.GetComponent<GameAgent>().Red)
                     {
                         temp.GetComponent<RandomPicker>().B_textSc++;
-                        Winner.text = "Blue";
+                        Winner.text = "Blue ";
                     }
                     else if (agent.GetComponent<GameAgent>().Blue < agent.GetComponent<GameAgent>().Red)
                     {
                         temp.GetComponent<RandomPicker>().R_textSc++;
-                        Winner.text = "Red";
+                        Winner.text = "Red ";
                     }
                     else
                     {
