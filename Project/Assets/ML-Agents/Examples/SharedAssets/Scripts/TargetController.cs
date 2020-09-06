@@ -27,11 +27,9 @@ namespace Unity.MLAgentsExamples
 
 
         public Text Winner;
-        public Text B;
-        public Text R;
         public GameObject agent;
         public GameObject finishUI;
-        public GameObject reset;
+       
         bool finish = false;
         private Vector3 m_startingPos; //the starting position of the target
         private Agent m_agentTouching; //the agent currently touching the target
@@ -97,25 +95,7 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodBlueteam");
                     finishUI.SetActive(true);
-                    reset.SetActive(false);
-                    agent.GetComponent<GameAgent>().Blue = agent.GetComponent<GameAgent>().Blue + 2;
-                    B.text = agent.GetComponent<GameAgent>().Blue.ToString();
-                    R.text = agent.GetComponent<GameAgent>().Red.ToString();
-                    GameObject temp = GameObject.FindGameObjectWithTag("GM");
-                    if (agent.GetComponent<GameAgent>().Blue> agent.GetComponent<GameAgent>().Red)
-                    {
-                        temp.GetComponent<RandomPicker>().B_textSc++;
-                        Winner.text = "Blue ";
-                    }
-                    else if(agent.GetComponent<GameAgent>().Blue < agent.GetComponent<GameAgent>().Red)
-                    {
-                        temp.GetComponent<RandomPicker>().R_textSc++;
-                        Winner.text = "Red ";
-                    }
-                    else 
-                    {
-                        Winner.text = "Nobody";
-                    }
+                    Winner.text = "Blue ";
                     onCollisionEnterEvent.Invoke(col);
                     if (respawnIfTouched)
                     {
@@ -130,24 +110,7 @@ namespace Unity.MLAgentsExamples
                     finish = true;
                     //Debug.Log("goodRedteam");
                     finishUI.SetActive(true);
-                    agent.GetComponent<GameAgent>().Red = agent.GetComponent<GameAgent>().Red + 2;
-                    B.text = agent.GetComponent<GameAgent>().Blue.ToString();
-                    R.text = agent.GetComponent<GameAgent>().Red.ToString();
-                    GameObject temp = GameObject.FindGameObjectWithTag("GM");
-                    if (agent.GetComponent<GameAgent>().Blue > agent.GetComponent<GameAgent>().Red)
-                    {
-                        temp.GetComponent<RandomPicker>().B_textSc++;
-                        Winner.text = "Blue ";
-                    }
-                    else if (agent.GetComponent<GameAgent>().Blue < agent.GetComponent<GameAgent>().Red)
-                    {
-                        temp.GetComponent<RandomPicker>().R_textSc++;
-                        Winner.text = "Red ";
-                    }
-                    else
-                    {
-                        Winner.text = "Nobody";
-                    }
+                    Winner.text = "Red ";
                     onCollisionEnterEvent.Invoke(col);
                     if (respawnIfTouched)
                     {

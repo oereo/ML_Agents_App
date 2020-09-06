@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class RandomPicker : MonoBehaviour
 {
-    // Start is called before the first frame update
+    /* Start is called before the first frame update
     public List<int> BlueCard = new List<int>();
     public List<int> RedCard = new List<int>();
     public int BlueScore;
@@ -74,10 +74,15 @@ public class RandomPicker : MonoBehaviour
         int index = RedCard.IndexOf(num);
         RedCard.RemoveAt(index);
     }
-
+    */
     public void MoveGame2()
     {
         SceneLoader.Instance.LoadScene("SoccerTwos");
+    }
+
+    public void MoveGame1()
+    {
+        SceneLoader.Instance.LoadScene("WalkerStatic");
     }
 
 }

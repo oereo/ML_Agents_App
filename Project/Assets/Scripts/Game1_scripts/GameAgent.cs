@@ -14,7 +14,7 @@ public class GameAgent : MonoBehaviour
 
     void Awake()
     {
-        if (!Soccer)
+       /*if (!Soccer)
         {
             int rand = Random.Range(0, gameOptions.Count);
             temp = GameObject.FindGameObjectWithTag("GM");
@@ -22,17 +22,17 @@ public class GameAgent : MonoBehaviour
             gameOptions[rand].SetActive(true);
             Blue = temp.GetComponent<RandomPicker>().BlueScore;
             Red = temp.GetComponent<RandomPicker>().RedScore;
-        }
+        }*/
       //  Destroy(GameObject.FindGameObjectWithTag("GM"));
     }
 
 
-    public void pickGame()
+    /*public void pickGame()
     {
         int rand = Random.Range(0, gameOptions.Count);
         gameOptions[rand].SetActive(true);
     }
-
+    */
     public void MoveMenu()
     {
         SceneLoader.Instance.LoadScene("menu");
