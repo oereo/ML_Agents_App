@@ -10,6 +10,8 @@ public class GameAgent : MonoBehaviour
     public Text p;
     public int Blue;
     public int Red;
+    public int Green;
+    public int Yellow;
     public bool Soccer;
 
     void Awake()

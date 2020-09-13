@@ -118,6 +118,36 @@ namespace Unity.MLAgentsExamples
                     }
                 }
             }
+            if (col.transform.CompareTag("Green"))
+            {
+                if (!finish)
+                {
+                    finish = true;
+                    //Debug.Log("goodRedteam");
+                    finishUI.SetActive(true);
+                    Winner.text = "Green ";
+                    onCollisionEnterEvent.Invoke(col);
+                    if (respawnIfTouched)
+                    {
+                        MoveTargetToRandomPosition();
+                    }
+                }
+            }
+            if (col.transform.CompareTag("Yellow"))
+            {
+                if (!finish)
+                {
+                    finish = true;
+                    //Debug.Log("goodRedteam");
+                    finishUI.SetActive(true);
+                    Winner.text = "Yellow ";
+                    onCollisionEnterEvent.Invoke(col);
+                    if (respawnIfTouched)
+                    {
+                        MoveTargetToRandomPosition();
+                    }
+                }
+            }
         }
 
         private void OnCollisionStay(Collision col)

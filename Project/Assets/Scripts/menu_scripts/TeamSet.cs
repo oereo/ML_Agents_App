@@ -6,6 +6,8 @@ public class TeamSet : MonoBehaviour
 {
     public Text RedScore;
     public Text BlueScore;
+    public Text YellowScore;
+    public Text GreenScore;
 
     public void blueUp()
     {
@@ -35,6 +37,34 @@ public class TeamSet : MonoBehaviour
         s -= 1;
         RedScore.text = s.ToString();
     }
+
+    public void YellowUp()
+    {
+        int s = int.Parse(YellowScore.text);
+        s += 1;
+        YellowScore.text = s.ToString();
+    }
+    public void YellowDown()
+    {
+        int s = int.Parse(YellowScore.text);
+        s -= 1;
+        YellowScore.text = s.ToString();
+    }
+
+    public void GreenUp()
+    {
+        int s = int.Parse(GreenScore.text);
+        s += 1;
+        GreenScore.text = s.ToString();
+    }
+
+    public void GreenDown()
+    {
+        int s = int.Parse(GreenScore.text);
+        s -= 1;
+        GreenScore.text = s.ToString();
+    }
+
 
 
 }

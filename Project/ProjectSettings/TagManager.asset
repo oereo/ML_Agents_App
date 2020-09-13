@@ -37,6 +37,8 @@ TagManager:
   - bs
   - rs
   - con
+  - Yellow
+  - Green
   layers:
   - Default
   - TransparentFX
