@@ -5,14 +5,17 @@ using UnityEngine;
 public class PickOnOff : MonoBehaviour
 {
     // Start is called before the first frame update
-    public List<GameObject> Card = new List<GameObject>();
-   public void OnOff()
+
+
+    public GameObject[] temp;
+    public void resetJebi()
     {
-
-        for(int i=0;i<Card.Count;i++)
+        
+        for (int i = 0; i < temp.Length; i++)
         {
-            Card[i].SetActive(false);
-
+            temp[i].SetActive(true);
+            
         }
+
     }
 }
