@@ -2645,7 +2645,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uB0B4\uAC00 \uC774 \uC0AC\uB78C \uBCF4\uB2E4\uB294 \uB0AB\uB2E4  \uC9C0\uBAA9"
+  m_Text: "\uB098\uBCF4\uB2E4 \uBABB\uC0DD\uAE34 \n\uC0AC\uB78C \uC9C0\uBAA9"
 --- !u!222 &229774403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4689,8 +4689,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC88B\uC544\uD558\uB294 \uC0AC\uB78C\uC5D0\uAC8C \uBB34\uB98E\uAFC7\uACE0
-    \uACE0\uBC31\uD560 \uAC83 \uAC19\uC740 \uC0AC\uB78C \uC9C0\uBAA9"
+  m_Text: "\uD0A4 \uAC00\uC7A5 \uC791\uC740 \uC0AC\uB78C \uC9C0\uBAA9"
 --- !u!222 &336183051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5203,8 +5202,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC8FC\uB7C9 \uC81C\uC77C \uB9CE\uC744 \uAC83 \uAC19\uC740 \uC0AC\uB78C
-    \uC0AC\uB78C \uC9C0\uBAA9"
+  m_Text: "\uACB0\uD63C \uC81C\uC77C \uBE68\uB9AC \n\uD560 \uAC83 \uAC19\uC740 \uC0AC\uB78C"
 --- !u!222 &372252215
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5497,8 +5495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC624\uB298 \uC548\uC53B\uACE0 \uB098\uC628 \uAC83 \uAC19\uC740 \uC0AC\uB78C
-    \uC9C0\uBAA9"
+  m_Text: "\uBC25 \uC798 \uC0AC\uC904\uAC83 \uAC19\uC740 \uC0AC\uB78C \uC9C0\uBAA9"
 --- !u!222 &380184177
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6823,8 +6820,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC5F0\uC560 \uB9CE\uC774 \uBABB \uD574\uBD24\uC744 \uAC83 \uAC19\uC740
-    \uC0AC\uB78C \uC9C0\uBAA9"
+  m_Text: "\uB2E4\uC2DC \uD0DC\uC5B4\uB098\uBA74 \uC774 \uC0AC\uB78C\uC73C\uB85C
+    \uD0DC\uC5B4\uB098\uACE0 \uC2F6\uB2E4 \uC9C0\uBAA9"
 --- !u!222 &429646568
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8298,7 +8295,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC591 \uC606 \uC0AC\uB78C \uC911 \uD558\uB098 \uC9C0\uBAA9"
+  m_Text: "\uC5F0\uC560 \uAC00\uC7A5 \uB9CE\uC774\n \uD574\uBCF8\uAC70 \uAC19\uC740
+    \uC0AC\uB78C"
 --- !u!222 &545582412
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10013,7 +10011,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC774 \uC0AC\uB78C\uC774 \uC824 \uC774\uC0C1\uD558\uB2E4 \uC9C0\uBAA9"
+  m_Text: "\uC774 \uC0AC\uB78C\uC774 \uC824 \uBCC4\uB85C\uB2E4 \uC9C0\uBAA9"
 --- !u!222 &802555755
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11822,8 +11820,8 @@ RectTransform:
   - {fileID: 485780517}
   - {fileID: 1035947071}
   - {fileID: 2001424684}
-  - {fileID: 1843362020}
   - {fileID: 1622931087}
+  - {fileID: 1843362020}
   m_Father: {fileID: 1882467335}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12230,8 +12228,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uACE0\uBC31\uC744 \uD55C \uBC88\uB3C4 \uBABB \uD574\uBD24\uC744 \uAC83
-    \uAC19\uC740 \uC0AC\uB78C \uC9C0\uBAA9"
+  m_Text: "\uACE0\uBC31\uC744 \uB9CE\uC774 \n\uD574\uBD24\uC744 \uAC83 \uAC19\uC740
+    \uC0AC\uB78C \uC9C0\uBAA9"
 --- !u!222 &1004375030
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13077,7 +13075,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uD55C\uC0AC\uB78C \uC9C0\uBAA9"
+  m_Text: "\uB450 \uC0AC\uB78C \uC9C0\uBAA9"
 --- !u!222 &1083009675
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13481,7 +13479,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1130336990}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -14672,7 +14670,7 @@ RectTransform:
   m_Children:
   - {fileID: 493900413}
   m_Father: {fileID: 1771103995}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -17087,7 +17085,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC774 \uC0AC\uB78C\uC774 \uC9C4\uAD6D\uC774\uB2E4 \uC9C0\uBAA9"
+  m_Text: "\uC9D1\uC5D0 \uBCF4\uB0B4\uACE0 \uC2F6\uC740\n \uC0AC\uB78C \uC9C0\uBAA9"
 --- !u!222 &1416740666
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17277,7 +17275,7 @@ RectTransform:
   - {fileID: 612929972}
   - {fileID: 1051349934}
   m_Father: {fileID: 1771103995}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -18337,7 +18335,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1514208942}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -19792,7 +19790,7 @@ RectTransform:
   m_Children:
   - {fileID: 2071302097}
   m_Father: {fileID: 978212652}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20363,7 +20361,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uB098 \uBE7C\uACE0 \uC804\uC6D0 \uB9C8\uC154!"
+  m_Text: "\uACB0\uD63C \uC81C\uC77C \uB2A6\uAC8C \n\uD560 \uAC83 \uAC19\uC740 \uC0AC\uB78C"
 --- !u!222 &1671814888
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20404,7 +20402,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1771103995}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20708,7 +20706,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1682736664}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -21058,7 +21056,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1703219889}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -21730,9 +21728,9 @@ RectTransform:
   - {fileID: 58274093}
   - {fileID: 1839880278}
   - {fileID: 1648567783}
+  - {fileID: 1228753148}
   - {fileID: 1438173055}
   - {fileID: 1682075271}
-  - {fileID: 1228753148}
   m_Father: {fileID: 1283623013}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22708,7 +22706,7 @@ RectTransform:
   - {fileID: 1289371808}
   - {fileID: 983156047}
   m_Father: {fileID: 978212652}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0.37500003, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -22935,7 +22933,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0.4
-  m_Text: "\uC7A0 \uC81C\uC77C \uB9CE\uC774 \uC798 \uAC83 \uAC19\uC740 \uC0AC\uB78C
+  m_Text: "\uC7A0 \uC81C\uC77C \uC801\uAC8C \uC798 \uAC83 \uAC19\uC740 \uC0AC\uB78C
     \uC9C0\uBAA9"
 --- !u!222 &1863761167
 CanvasRenderer:
@@ -24575,7 +24573,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1971152711}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -26858,7 +26856,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 2136829102}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
