@@ -14923,7 +14923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uADD3\uC18D\uB9D0 \uBF51\uAE30!"
+  m_Text: "\uC2DD\uBE75\uC774\uB124 \uBF51\uAE30!"
 --- !u!222 &1256677496
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15625,7 +15625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1292540186
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17277,7 +17277,7 @@ RectTransform:
   - {fileID: 612929972}
   - {fileID: 1051349934}
   m_Father: {fileID: 1771103995}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -20037,7 +20037,7 @@ RectTransform:
   m_Children:
   - {fileID: 1793828715}
   m_Father: {fileID: 1771103995}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -21729,8 +21729,8 @@ RectTransform:
   m_Children:
   - {fileID: 58274093}
   - {fileID: 1839880278}
-  - {fileID: 1438173055}
   - {fileID: 1648567783}
+  - {fileID: 1438173055}
   - {fileID: 1682075271}
   - {fileID: 1228753148}
   m_Father: {fileID: 1283623013}
@@ -22204,7 +22204,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\uBF51\uAE30!"
+  m_Text: "\uC2DD\uBE75\uC774\uB124 \uBF51\uAE30!"
 --- !u!222 &1793928060
 CanvasRenderer:
   m_ObjectHideFlags: 0
